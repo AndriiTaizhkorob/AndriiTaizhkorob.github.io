@@ -3,7 +3,6 @@
 @import url(big_style.css) screen and (min-width: 971px);
 
 *{
-    color: white;
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
@@ -13,37 +12,58 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 header{
-    background-color: rgb(31, 30, 30);
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0, 30%));
     margin-bottom: 10px;
     padding-block: 30px;
-    width: auto;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+
 }
 
 header nav ul{
+    list-style: none;
+    display: flex;
     padding-left: 2%;
+    align-items: center;
 }
 
 header nav ul li{
     margin-inline: 10px;
-    display: inline;
 }
 
 header nav ul li a{
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
+header nav ul li.text{
+    margin-top: 24px;
+}
+
 header nav ul li a:hover{
-    color: rgb(67, 141, 27);
+    color: rgb(21, 201, 102);;
+}
+
+.odd{
+    color: rgb(67, 49, 169);
+    background-color: rgb(48, 15, 91);
+}
+
+.even{
+    color: rgb(21, 201, 102);
+    background-color: rgb(37, 163, 28);
 }
 
 main article{
     margin-block: 40px;
     margin-inline: 25px;
-    background-color: rgb(41, 40, 40);
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0, 30%));
 }
 
 main article section{
@@ -51,6 +71,7 @@ main article section{
 }
 
 main article section p{
+    color: black;
     padding-top: 10px;
     margin-left: 2%;
 }
@@ -58,46 +79,49 @@ main article section p{
 main article section h1{
     padding-block: 20px;
     padding-inline: 2%;
-    background-color: rgb(68, 63, 63);
     margin-bottom: 10px;
     font-weight: 600;
-    color: rgb(67, 141, 27);
+}
+
+main article section p{
+    padding-right: 20px;
 }
 
 main article figure{
+    margin-right: 1px;
     padding-bottom: 20px;
-}
-
-main article figure figcaption sub{
-    padding-inline: 2%;
-}
-
-main article img{
-    display: block;
     margin-inline: 2%;
-    width: 96%;
+    display: flex;
+}
+
+main article figure img{
+    flex: 50%;
+    max-width: 100%;
+    vertical-align: middle;
 }
 
 main iframe{
-    display: block;
-    margin-inline: 2%;
-    width: 96%;
+    flex: 100%;
 }
 
 main aside{
     margin-inline: 25px;
     margin-block: 40px;
-    background-color: rgb(41, 40, 40);
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0, 30%));
 }
 
 main aside section ul{
+    list-style: none;
     padding-inline: 19px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 main aside section ul li{
-    display: inline-block;
-    padding-block: 6px;
-    padding-inline: 6px;
+    margin-block: 5px;
+    max-width: 20%;
 }
 
 main aside section h1{
@@ -114,16 +138,16 @@ main aside section ul li figure img{
 
 footer{
     width: auto;
-    background-color: rgb(31, 30, 30);
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0, 30%));
 }
 
 footer nav section{
+    color: rgb(255, 255, 255);
     margin-left: 25px;
 }
 
 footer nav section h3{
-    color: rgb(67, 141, 27);
-    text-decoration: underline;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 
@@ -134,4 +158,16 @@ footer nav section#social_media ul li{
 
 footer nav section#social_media ul li a img{
     width: 35px;
+}
+
+footer nav section div{
+    margin-top: 10px;
+}
+
+footer nav section div a{
+    color: rgb(255, 255, 255);
+}
+
+footer nav section div a:hover{
+    color: rgb(67, 49, 169);
 }
