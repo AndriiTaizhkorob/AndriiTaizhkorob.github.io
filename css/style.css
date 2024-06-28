@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url(small_style.css) screen and (max-width: 970px);
+@import url(big_style.css) screen and (min-width: 971px);
+
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background-color: rgb(31, 30, 30);
+    margin-bottom: 10px;
+    padding-block: 30px;
+    width: auto;
+}
+
+header nav ul{
+    padding-left: 2%;
+}
+
+header nav ul li{
+    margin-inline: 10px;
+    display: inline;
+}
+
+header nav ul li a{
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color: rgb(67, 141, 27);
+}
+
+main article{
+    margin-block: 40px;
+    margin-inline: 25px;
+    background-color: rgb(41, 40, 40);
+}
+
+main article section{
+    padding-bottom: 20px;
+}
+
+main article section p{
+    padding-top: 10px;
+    margin-left: 2%;
+}
+
+main article section h1{
+    padding-block: 20px;
+    padding-inline: 2%;
+    background-color: rgb(68, 63, 63);
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: rgb(67, 141, 27);
+}
+
+main article figure{
+    padding-bottom: 20px;
+}
+
+main article figure figcaption sub{
+    padding-inline: 2%;
+}
+
+main article img{
+    display: block;
+    margin-inline: 2%;
+    width: 96%;
+}
+
+main iframe{
+    display: block;
+    margin-inline: 2%;
+    width: 96%;
+}
+
+main aside{
+    margin-inline: 25px;
+    margin-block: 40px;
+    background-color: rgb(41, 40, 40);
+}
+
+main aside section ul{
+    padding-inline: 19px;
+}
+
+main aside section ul li{
+    display: inline-block;
+    padding-block: 6px;
+    padding-inline: 6px;
+}
+
+main aside section h1{
+    padding-block: 10px;
+    padding-left: 25px;
+    background-color: rgb(68, 63, 63);
+    font-weight: 600;
+    color: rgb(67, 141, 27);
+}
+
+main aside section ul li figure img{
+    width: 192px;
+}
+
+footer{
+    width: auto;
+    background-color: rgb(31, 30, 30);
+}
+
+footer nav section{
+    margin-left: 25px;
+}
+
+footer nav section h3{
+    color: rgb(67, 141, 27);
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+footer nav section#social_media ul li{
+    display: inline;
+    margin-inline: 10px;
+}
+
+footer nav section#social_media ul li a img{
+    width: 35px;
+}

@@ -1,0 +1,43 @@
+body{
+    padding-inline: 90px;
+}
+
+header{
+    font-size: 21px;
+}
+
+header nav ul li a img{
+    border-radius: 25px;
+    width: 50px;
+}
+
+header nav ul li.text{
+    position: relative;
+    bottom: 15px;
+}
+
+main iframe{
+    height: 60%;
+}
+
+main article section h1{
+    font-size: 32px;
+}
+
+main aside section h1{
+    font-size: 32px;
+}
+
+footer{
+    padding-block: 60px;
+}
+
+footer nav section#contact_data{
+    margin-top: -74px;
+    margin-left: 37%;
+}
+
+footer nav section#contact_data div{
+    margin-left: 200px;
+    margin-top: -72px;
+}

@@ -1,0 +1,37 @@
+header{
+    font-size: 15px;
+}
+
+header nav ul li a img{
+    border-radius: 20px;
+    width: 40px;
+}
+
+header nav ul li.text{
+    position: relative;
+    bottom: 14px;
+}
+
+main iframe{
+    height: 35%;
+}
+
+main article section h1{
+    font-size: 24px;
+}
+
+main aside section h1{
+    font-size: 24px;
+}
+
+main article section p{
+    font-size: 14px;
+}
+
+footer{
+    padding-block: 40px;
+}
+
+footer nav section{
+    padding-bottom: 20px;
+}
