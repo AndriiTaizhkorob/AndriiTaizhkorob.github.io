@@ -1,0 +1,13 @@
+main article section{
+    overflow: auto;
+}
+
+main article section figure.photo1{
+    width: 20%;
+    float: right;
+}
+
+main article section figure.photo2{
+    width: 70%;
+    float: right;
+}
