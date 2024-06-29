@@ -41,3 +41,12 @@ footer nav section#contact_data div{
     margin-left: 200px;
     margin-top: -72px;
 }
+
+footer nav section div{
+    position: relative;
+    top: -20px
+}
+
+main figure iframe{
+    height: 768px;
+}
