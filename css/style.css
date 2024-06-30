@@ -122,6 +122,10 @@ main article figure{
     display: flex;
 }
 
+figure.photo1, figure.photo2{
+    display: block;
+}
+
 main article figure img{
     flex: 50%;
     max-width: 100%;
@@ -169,18 +173,25 @@ main aside section ul li figure img{
 
 footer{
     border-radius: 8px 8px 0px 0px;
-    width: auto;
     filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0, 60%));
+    padding-left: 15px;
 }
 
 footer nav section{
     color: rgb(255, 255, 255);
-    margin-left: 40px;
+    display: inline-block;
+    padding-inline: 25px;
+    padding-top: 10px;
 }
 
 footer nav section h3{
     font-weight: 600;
     margin-bottom: 10px;
+}
+
+footer nav section#social_media{
+    position: relative;
+    bottom: 7px;
 }
 
 footer nav section#social_media ul li{
@@ -192,15 +203,19 @@ footer nav section#social_media ul li a img{
     width: 35px;
 }
 
-footer nav section#contact_data{
+footer nav section#email{
     position: relative;
-    top: -8px;
+    bottom: 25px;
 }
 
-footer nav section div a{
+footer nav section#email a{
     color: rgb(255, 255, 255);
 }
 
-footer nav section div a:hover{
+footer nav section#email a:hover{
     color: rgb(67, 49, 169);
+}
+
+figcaption{
+    position: absolute;
 }
