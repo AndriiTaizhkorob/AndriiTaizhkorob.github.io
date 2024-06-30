@@ -1,0 +1,23 @@
+main article section{
+    overflow: auto;
+}
+
+main article section figure.photo1{
+    width: 50%;
+    float: right;
+}
+
+main article section figure.photo2{
+    width: 50%;
+    float: right;
+}
+
+main aside section{
+    padding-bottom: 20px;
+}
+
+main aside section p{
+    color: black;
+    padding-top: 10px;
+    margin-inline: 2%;
+}
