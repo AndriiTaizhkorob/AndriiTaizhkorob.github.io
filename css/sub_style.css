@@ -2,6 +2,11 @@ main article section{
     overflow: auto;
 }
 
+main article section figure.photo0{
+    width: 15%;
+    float: right;
+}
+
 main article section figure.photo1{
     width: 20%;
     float: right;

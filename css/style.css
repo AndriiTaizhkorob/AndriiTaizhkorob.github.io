@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lekton:wght@700&family=Saira&display=swap');
 @import url(small_style.css) screen and (max-width: 920px);
 @import url(big_style.css) screen and (min-width: 921px);
+@import url(sub_style.css) screen and (min-width: 921px);
 
 *{
     margin: 0;
