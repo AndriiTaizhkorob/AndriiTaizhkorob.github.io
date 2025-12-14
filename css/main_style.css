@@ -12,6 +12,11 @@ main article section figure.photo2{
     float: right;
 }
 
+main article section figure.photo3{
+    width: 50%;
+    float: right;
+}
+
 main aside section{
     padding-bottom: 20px;
 }

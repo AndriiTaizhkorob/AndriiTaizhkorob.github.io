@@ -24,15 +24,20 @@ p{
 
 body{
     background-color: rgb(255, 255, 255);
+    background-image: url("../imgs/fuyt2.jpg");
 }
 
 header.odd{
     border-radius: 0px 0px 8px 8px;
     filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0, 80%));
-    padding-block: 30px;
+    padding-block: 20px;
     z-index: 1;
     position: sticky;
     top: 0;
+}
+
+header#main{
+    position: static;
 }
 
 header.sub{
@@ -94,7 +99,7 @@ main article{
     filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0, 30%));
 }
 
-main article section{
+main article section:not(.fp){
     padding-bottom: 20px;
 }
 
@@ -117,7 +122,8 @@ main article section a:hover{
 
 main article section h1{
     border-radius: 8px 8px 0px 0px;
-    padding-block: 20px;
+    padding-top: 12px;
+    padding-bottom: 10px;
     padding-inline: 2%;
     margin-bottom: 10px;
     font-weight: 600;
@@ -134,14 +140,21 @@ main article figure{
     display: flex;
 }
 
-figure.photo1, figure.photo2{
+figure.photo1, figure.photo2, figure.photo3{
     display: block;
 }
 
-main article figure img{
+main article section > figure > img, main article section > figure > video{
     flex: 50%;
     max-width: 100%;
     vertical-align: middle;
+}
+
+main article section > figure.cv{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
 
 main figure iframe{

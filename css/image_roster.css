@@ -1,0 +1,99 @@
+    main article.fp {
+        height: auto;
+    }
+    
+    .hero {
+        place-items: center;
+    }
+
+    .slider-shell {
+        width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .slider-shell-mini {
+        width: 100%;
+        border-radius: 0px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .swiper {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background: #0f1012;
+    }
+
+    .swiper-mini {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background: #0f1012;
+    }
+
+    .swiper-slide {
+        position: relative;
+        display: grid;
+        place-items: end start;
+    }
+
+    .swiper-slide img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* subtle dark gradient for legibility */
+    .overlay {
+        position: absolute;
+        inset: 0;
+        background:
+            linear-gradient(110deg,
+                rgba(0, 0, 0, 0.35) 0%,
+                rgba(0, 0, 0, 0.15) 50%,
+                rgba(0, 0, 0, 0.35) 100%);
+    }
+
+    .caption {
+        position: relative;
+        padding: clamp(1.25rem, 3vw, 2.5rem);
+        max-width: 34rem;
+        z-index: 2;
+    }
+
+    .caption h2 {
+        margin: 0 0 0.5rem 0;
+        font-size: clamp(1.4rem, 3.2vw, 2.2rem);
+        letter-spacing: 0.2px;
+    }
+
+    .caption p {
+        margin: 0;
+        color: var(--muted);
+        font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+        line-height: 1.5;
+    }
+
+    #portfolioSwiper, #portfolioSwiper1, #portfolioSwiper2 {
+        --swiper-navigation-color: #ffffff;
+    }
+
+    /* Swiper UI tweaks */
+    .swiper-button-next,
+    .swiper-button-prev {
+        --swiper-navigation-size: 20px;
+        width: 44px;
+        height: 44px;
+        border-radius: 999px;
+    }
+
+    .swiper-pagination-bullet {
+        background: rgba(255, 255, 255, 0.55);
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: white;
+    }
